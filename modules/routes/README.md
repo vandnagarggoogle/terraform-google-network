@@ -47,7 +47,7 @@ module "vpc" {
 | module\_depends\_on | List of modules or resources this module depends on. | `list(any)` | `[]` | no |
 | network\_name | The name of the network where routes will be created | `string` | n/a | yes |
 | project\_id | The ID of the project where the routes will be created | `string` | n/a | yes |
-| routes | List of routes being created in this VPC | `list(map(string))` | `[]` | no |
+| routes | List of routes being created in this VPC. | <pre>list(object({<br>    name                   = string<br>    description            = optional(string)<br>    tags                   = optional(list(string), [])<br>    destination_range      = string<br>    next_hop_gateway       = optional(string)<br>    next_hop_internet      = optional(bool, false)<br>    next_hop_ip            = optional(string)<br>    next_hop_instance      = optional(string)<br>    next_hop_instance_zone = optional(string)<br>    next_hop_vpn_tunnel    = optional(string)<br>    next_hop_ilb           = optional(string) # CRITICAL for your bridge<br>    priority               = optional(number, 1000)<br>  }))</pre> | `[]` | no |
 
 ## Outputs
 
