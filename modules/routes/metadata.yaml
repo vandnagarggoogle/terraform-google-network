@@ -131,9 +131,7 @@ spec:
     outputs:
       - name: routes
         description: The created routes resources
-        type: map
       - name: route_ids
-        type: list(string)
   requirements:
     roles:
       - level: Project
