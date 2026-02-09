@@ -21,7 +21,7 @@ metadata:
 spec:
   info:
     title: Terraform Routes Module
-    version: 1.0.0
+    version: 1.0.1
     source:
       repo: https://github.com/vandnagarggoogle/terraform-google-network.git
       sourceType: git
