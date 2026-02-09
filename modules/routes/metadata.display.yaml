@@ -30,7 +30,5 @@ spec:
               title: Route Name
             destination_range:
               title: Destination Range (CIDR)
-              hint: e.g., 10.50.0.0/16
             next_hop_ilb:
               title: Next Hop ILB
-              hint: The forwarding rule of your bridge.
