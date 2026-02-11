@@ -32,3 +32,11 @@ spec:
               title: Destination Range (CIDR)
             next_hop_ilb:
               title: Next Hop ILB
+    runtime:
+      outputs:
+        routes:
+          visibility: VISIBILITY_ROOT
+        route_ids:
+          visibility: VISIBILITY_ROOT
+        route_names:
+          visibility: VISIBILITY_ROOT
